@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="stylesheet" href="/Portfolio/CSS/Contact me.css">
 </head>
 
 <body>
+    <ul>
+        <strong>
+            <li><a href="/Portfolio/index.html">Home</a></li>
+        </strong>
+    </ul>
+
+    <h2>Contact Me</h2>
+
     <form method="Get">
+
         First Name: <input type="text" name="firstname" required><br>
         Last Name: <input type="text" name="lastname" required><br>
         Email: <input type="email" required><br>
-        <!-- Password: <input type="password" minlength="5"><br> -->
         Company Name:<input type="text" name="company_name"><br>
 
         Reason For Contact:<br>
@@ -27,8 +36,12 @@
 
         Book an Appoinment:<br>
         <input type="date" name="Book an Appoinment" required><br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+
+        <div class="button-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
 
     </form>
 </body>

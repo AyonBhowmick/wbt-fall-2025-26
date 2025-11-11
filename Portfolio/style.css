@@ -1,0 +1,32 @@
+body {
+    font-family: 'ROBOTO', sans-serif;
+    background-color: rgb(173, 216, 230);
+    padding: 20px;
+}
+
+
+nav ul {
+    display: flex;
+    border-radius: 15px;
+    list-style-type: none;
+    background-color: rgb(99, 117, 143);
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 18px;
+}
+
+nav ul a:hover {
+    color: rgb(1, 14, 14);
+    color: aqua;
+}
