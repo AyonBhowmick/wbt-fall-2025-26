@@ -9,43 +9,79 @@
 </head>
 
 <body>
-    <ul>
-        <strong>
-            <li><a href="/Portfolio/index.html">Home</a></li>
-        </strong>
-    </ul>
+        <nav>
+            <ul>
+                <li><a href="/Portfolio/index.html">Home</a></li>
+                <li><a href="/Portfolio/HTML/Education.html">Education</a></li>
+                <li><a href="/Portfolio/HTML/Experience.html">Experience</a></li>
+                <li><a href="/Portfolio/HTML/Project.html">Project</a></li>
+            </ul>
+        </nav>
 
-    <h2>Contact Me</h2>
+        <div class="form-container">
+        <h2>Contact Me</h2>
 
-    <form method="Get">
+        <form method="POST">
+            <div class="form-row">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="firstname" required>
+            </div>
+            <div class="form-row">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="lastname" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        First Name: <input type="text" name="firstname" required><br>
-        Last Name: <input type="text" name="lastname" required><br>
-        Email: <input type="email" required><br>
-        Company Name:<input type="text" name="company_name"><br>
-
-        Reason For Contact:<br>
-        <input type="radio" name="Reason for Contact" required>Project<br>
-        <input type="radio" name="Reason for Contact">Thesis<br>
-        <input type="radio" name="Reason for Contact">Job<br>
-
-        Service Provided:<br>
-        <input type="checkbox" name="Service Provided" required>Software Engineer<br>
-        <input type="checkbox" name="Service Provided" required>AI ML Engineer<br>
-        <input type="checkbox" name="Service Provided" required>Web Development<br>
-
-        Book an Appoinment:<br>
-        <input type="date" name="Book an Appoinment" required><br>
-
-        <div class="button-group">
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <div class="form-row">
+                <label for="company_name">Company Name:</label>
+                <input type="text" id="company_name" name="company_name">
+            </div>
+            
+            <div class="form-row1">
+                <label>Reason for Contact:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="Reason for Contact" required>Project<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="Reason for Contact" required>Thesis<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="Reason for Contact" required>Job<br>
+                    </label>
+            </div>
         </div>
 
+            <div class="form-row2">
+                <label>Services Needed:</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="service_provided" value="Web Development"> Web Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="service_provided" value="AI ML Engineer"> AI ML Engineer
+                    </label>
+                    <label>
+                        <input type="checkbox" name="service_provided" value="Software Development"> Software Development
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="appointment_date">Book an Appointment:</label>
+                <input type="date" id="appointment_date" name="appointment_date" required>
+            </div>
 
-    </form>
+            <div class="button-group">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
 </body>
-
-
 
 </html>
