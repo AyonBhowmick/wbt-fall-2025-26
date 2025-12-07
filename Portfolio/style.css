@@ -1,16 +1,23 @@
+/* Simple and Clean Portfolio CSS */
 body {
-    font-family: 'ROBOTO', sans-serif;
-    background-color: rgb(173, 216, 230);
-    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #e3f2fd, #f3e5f5);
+    padding: 25px;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 100vh;
 }
 
-
+/* Navigation - Clean Blue */
 nav ul {
     display: flex;
-    border-radius: 15px;
-    list-style-type: none;
-    background-color: rgb(99, 117, 143);
+    border-radius: 12px;
+    list-style: none;
+    background: #2c3e50;
     justify-content: center;
+    padding: 0;
+    margin: 0 0 40px 0;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
 }
 
 nav ul li {
@@ -21,12 +28,92 @@ nav ul a {
     display: block;
     text-decoration: none;
     color: white;
-    text-align: center;
-    padding: 14px;
-    font-size: 18px;
+    padding: 16px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    /* transition: background 0.3s; */
 }
 
 nav ul a:hover {
-    color: rgb(1, 14, 14);
-    color: aqua;
+    background: #3498db;
 }
+
+/* Introduction Section - Clean Card */
+.introduction {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Picture on Right */
+.intro-image {
+    order: 2;
+}
+
+.intro-image img {
+    width: 220px;
+    height: 280px;
+    border-radius: 12px;
+    border: 4px solid #3498db;
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+}
+
+/* Text on Left */
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+.intro-text h2 {
+    color: #3498db;
+    font-size: 1.6rem;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.intro-text h3 {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Bio Section */
+.bio {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.bio h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin: 0 0 25px 0;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #3498db;
+    font-weight: 600;
+}
+
+.bio p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+    color: #34495e;
+    margin: 0;
+    text-align: justify;
+}
+
+
+
+
